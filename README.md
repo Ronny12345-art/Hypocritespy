@@ -1,142 +1,105 @@
-# Mugabo Rongin 👋
+# Hypocritespy 🔴
 
-![Profile Image](https://github.com/Ronny12345-art/Hypocritespy/blob/main/mugabo-rongin-cybersecurity.png)
-🔴 Hypocritespy
+### Endpoint Surveillance Research & Defensive Security Project
 
-A Python-Based Surveillance Utility
-Built with ❤️, ☕, and controlled chaos by Ronny Rogers (Mugabo Rongin)
+**Hypocritespy** is a Python-based cybersecurity research project created by **Mugabo Rongin** for studying how endpoint surveillance techniques can be implemented and, more importantly, how defenders can detect and defend against them.
 
-⚠️ Important Notice
+The project is designed for **authorized security research, controlled laboratory environments, penetration-testing education, and defensive security studies**.
 
-Hypocritespy is intended for LEGITIMATE SECURITY TESTING ONLY on devices you own or have explicit permission to monitor. Unauthorized use is illegal and violates privacy laws worldwide.
+> ⚠️ **Ethical Use Notice**
+>
+> Hypocritespy must only be tested on systems you own or on systems where you have explicit authorization. Unauthorized monitoring, credential collection, surveillance, or data interception may be illegal.
 
-🎯 Overview
+---
 
-Hypocritespy captures system activity via multiple vectors to help with security research and testing:
+## 🎯 What This Project Studies
 
-🎥 Webcam Recording – Captures video from the default camera
+Hypocritespy demonstrates several categories of endpoint monitoring techniques in a controlled environment:
 
-🎤 Microphone Recording – Records ambient audio
+- 🎥 Webcam access
+- 🎤 Microphone access
+- ⌨️ Keyboard-input monitoring
+- 🖼️ Screen capture
+- 📡 Data transmission
+- ⏱️ Scheduled activity
+- 🛡️ Defensive detection opportunities
 
-⌨️ Keylogging – Tracks all keyboard inputs
+The purpose is to help cybersecurity learners understand what these behaviors can look like from a defender's perspective.
 
-🖼️ Screenshots – Takes periodic screen captures
+---
 
-Default Behavior:
-Records for 10 minutes every 3 hours, emails collected data, then repeats.
+## 🔬 Research Goals
 
-🛠️ Quick Setup
+This project can be used to study questions such as:
 
-Configure the Script
-Edit these four values in the code:
+- How can suspicious endpoint behavior be identified?
+- What indicators can reveal unauthorized surveillance?
+- How can defenders monitor suspicious processes?
+- How can outgoing network connections be investigated?
+- What security controls can prevent unauthorized data collection?
+- How do endpoint security products respond to suspicious behavior?
 
-YOUR_EMAIL = "your_email@gmail.com"            # Your email address
-APP_PASSWORD = "your_app_specific_password"    # App password (not your normal email password)
-RECIPIENT = "receiver@gmail.com"                # Email to receive data
-RECORD_DURATION = 600                           # Recording duration in seconds (default 10 minutes)
-INTERVAL = 10800                               # Interval between sessions in seconds (default 3 hours)
+---
 
+## 🧪 Recommended Environment
 
-Build the Executable
-Use PyInstaller with a benign icon to avoid suspicion:
+For experimentation, use an isolated laboratory environment such as:
 
-pyinstaller --onefile --windowed --icon=calculator.ico main.py
+- A virtual machine
+- A disposable test account
+- Test data
+- A controlled network
+- Hardware you own
 
+Do **not** deploy the project against other people's devices or accounts without explicit authorization.
 
-Enable Startup Execution
-For persistence, configure Windows Task Scheduler to run the executable at startup or logon.
+---
 
-🎨 Customization
+## 🛡️ Defensive Research
 
-Timing Presets:
+Hypocritespy can also be used as a starting point for defensive experiments involving:
 
-# Quick monitoring: 1 minute every hour
-RECORD_DURATION = 60
-INTERVAL = 3600
+- Endpoint monitoring
+- Process analysis
+- Network monitoring
+- Windows startup analysis
+- Detection engineering
+- Antivirus/EDR research
+- Incident-response exercises
 
-# Aggressive monitoring: continuous
-RECORD_DURATION = 86400   # 24 hours
-INTERVAL = 1             # Immediate repeat
+A useful exercise is to observe what evidence a monitoring tool leaves behind and then develop defensive detections for those behaviors.
 
+---
 
-Feature Toggles: Enable or disable specific modules in the configuration as needed.
+## 👨‍💻 Author
 
-⚠️ Critical Notes
+**Mugabo Rongin**
 
-Antivirus software will flag this as malware due to its nature.
+Cybersecurity Researcher & Developer
 
-Always use app-specific passwords instead of your primary email password.
+GitHub: https://github.com/Ronny12345-art
 
-Test only in isolated virtual machines or controlled environments.
+---
 
-Verify and comply with local laws before deployment.
+## 📚 Related Project
 
-Always obtain written consent when monitoring others.
+Check out my other cybersecurity/software project:
 
-🛡️ Protection Against Unauthorized Surveillance
+**MRcutter**  
+https://github.com/Ronny12345-art/MRcutter
 
-To defend your system from tools like Hypocritespy:
+---
 
-Use reputable antivirus and anti-malware software
+## ⚖️ Disclaimer
 
-Regularly audit startup programs and scheduled tasks
+This project is provided for educational and authorized security research purposes.
 
-Monitor outgoing network connections
+The author does not encourage or support unauthorized surveillance, privacy violations, credential theft, or other illegal activity.
 
-Use physical webcam covers when not in use
+You are responsible for complying with all applicable laws and obtaining appropriate authorization before conducting security testing.
 
-📚 Legitimate Use Cases
+---
 
-Parental control (with informed consent)
+**Hypocritespy v1.0 — Cybersecurity Research Project**
 
-Employee monitoring (with written consent and legal compliance)
-
-Personal device security research
-
-Authorized penetration testing
-
-Educational cybersecurity studies
-
-🚫 Prohibited Uses
-
-Monitoring without explicit consent
-
-Spying on friends, family, or partners
-
-Corporate espionage
-
-Any unauthorized surveillance
-
-⚖️ Legal Disclaimer
-
-By using this software, you agree that:
-
-You will use it only for legal and ethical purposes
-
-You accept full responsibility for your actions
-
-The developer holds no liability for misuse
-
-You understand the legal consequences of unauthorized use
-
-📞 More Information
-
-For educational inquiries only:
-https://ronny12345-art.github.io/ronnyrogers.dev/
-
-👤 About the Author
-
-Ronny Rogers
-💻 Developer | 🛡️ Cybersecurity Specialist | ⚡ Pentester
-
-Developer's Website: https://temp-wgktoqotyspoddhwlaln.webadorsite.com/?_gl=1*7vsbd1*_gcl_au*MTczNzc2NDMwMC4xNzY4NjQwODQxLjEzNjc2OTI1MDguMTc2ODY0MDk3MC4xNzY4NjQwOTY5*_ga*MjAyNzI3NjcyMS4xNzY4NjQwNzk2*_ga_E6PZPGE4QM*czE3Njg2NDA3OTQkbzEkZzEkdDE3Njg2NDM5NDkkajYwJGwwJGgyMDMzMTI1NTUz
-
-Purpose: To facilitate learning about surveillance detection
-Goal: Improve defensive security measures
-Ethics: Privacy and consent always come first
-
-🔐 Final Reminder
-
-True cybersecurity power comes from protection, not intrusion. Use this knowledge responsibly to build stronger defenses—not to breach privacy.
-
-Version: 1.0 | For Educational Purposes Only | Use Responsibly
+Created by **Mugabo Rongin**.
