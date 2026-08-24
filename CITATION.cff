@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Hypocritespy"
+message: "If you use Hypocritespy in research, education, or an authorized security project, please cite this work."
+type: software
+authors:
+  - family-names: "Rongin"
+    given-names: "Mugabo"
+    affiliation: "Independent Cybersecurity Researcher and Developer"
+repository-code: "https://github.com/Ronny12345-art/Hypocritespy"
+url: "https://github.com/Ronny12345-art/Hypocritespy"
+license: "MIT"
+abstract: "Python-based cybersecurity research project for studying endpoint surveillance techniques and developing defensive detection methods."
+keywords:
+  - cybersecurity
+  - security research
+  - endpoint security
+  - malware analysis
+  - cybersecurity education
